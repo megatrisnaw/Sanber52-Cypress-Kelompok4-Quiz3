@@ -1,5 +1,5 @@
 # Sanber52-Cypress-Kelompok4-Quiz3
-1. Create an Account : Adip Barcker
+1. Create an Account : Adip Nur Qahar
 2. Login : Mega Trisna Wulandari
 3. My Account > Edit Account Information : Susan Susanti
 4. My Account > Edit Address : Nabilah Luthfiyah
