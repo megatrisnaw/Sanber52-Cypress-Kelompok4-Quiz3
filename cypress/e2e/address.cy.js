@@ -5,19 +5,16 @@ describe('Update Address', () => {
     beforeEach(() => {
         cy.visit('');
         cy.contains('Sign In').click();
-        cy.wait(1000);
-        cy.contains('Sign In').click();
         cy.login('testing__1234@gmail.com','Testing123');
         cy.wait(600);
         cy.visit('/customer/address/edit/');
     });
 
-    it('Update Profile with Valid Address', () => {
+    it.only('Update Profile with Valid Address', () => {
         cy.get('#firstname').clear().should('have.value', '')
         cy.get('#firstname').type(userData.validUser.firstName)
         cy.get('#lastname').clear().should('have.value', '')
         cy.get('#lastname').type(userData.validUser.lastName)
-        cy.get('#telephone').type(addressData.validAddress.telephone)
         cy.get('#company').type(addressData.validAddress.company)
         cy.get('#telephone').type(addressData.validAddress.telephone)
         cy.get('#street_1').type(addressData.validAddress.street_1)
