@@ -27,7 +27,7 @@ describe('Update Address', () => {
         cy.get('#form-validate > .actions-toolbar > div.primary > .action > span').click();
         cy.wait(500)
         cy.get('.message-success > div').should('be.visible')
-        cy.wait(500)
+        cy.wait(600)
     })
     
     it('Update Profile with Invalid Address', () => {
