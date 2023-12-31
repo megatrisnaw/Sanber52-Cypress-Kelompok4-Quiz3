@@ -1,5 +1,5 @@
 
-const userData = require('../fixtures/userData.json')
+//const userData = require('../fixtures/userData.json')
 
 describe('Login Functionality', () => {
     beforeEach(() => {
@@ -21,14 +21,6 @@ describe('Login Functionality', () => {
     });
     it('Verify failed login - email not registered', () => {
         cy.login('megaaa@gmail.com','123456789');
-        cy.get('.message-error > div').should('be.visible');
-        cy.wait(500)
-    });
-    it.only('Verify failed login - fixtures', () => {
-        cy.contains('Sign In').click();
-        cy.get('#email').type(userData.invalidUser2.email);
-        cy.get('#pass').type(userData.invalidUser2.password);
-        cy.get('#send2').click();
         cy.get('.message-error > div').should('be.visible');
         cy.wait(500)
     });
