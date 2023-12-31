@@ -1,4 +1,4 @@
-import loginPage from '../support/pageObject/login.page';
+
 const userData = require('../fixtures/userData.json')
 
 describe('Login Functionality', () => {
@@ -25,7 +25,10 @@ describe('Login Functionality', () => {
         cy.wait(500)
     });
     it.only('Verify failed login - fixtures', () => {
-        cy.login('megaaa@gmail.com','123456789');
+        cy.contains('Sign In').click();
+        cy.get('#email').type(userData.invalidUser2.email);
+        cy.get('#pass').type(userData.invalidUser2.password);
+        cy.get('#send2').click();
         cy.get('.message-error > div').should('be.visible');
         cy.wait(500)
     });
