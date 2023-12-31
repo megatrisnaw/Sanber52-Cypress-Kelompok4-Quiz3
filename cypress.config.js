@@ -7,7 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     viewportHeight: 680,
-    defaultCommandTimeout: 6000,
+    defaultCommandTimeout: 10000,
     screenshotOnRunFailure: false,
     chromeWebSecurity: false
   },

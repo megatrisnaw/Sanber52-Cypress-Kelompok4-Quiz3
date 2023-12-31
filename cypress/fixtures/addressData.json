@@ -1,0 +1,22 @@
+{
+    "validAddress": {
+        "company" : "WOM",
+        "telephone" : "085362624228",
+        "street_1" : "Jl. Setia Budi No 12C",
+        "city" : "Jakarta",
+        "province" : "DKI Jakarta",
+        "zip" : "27890",
+        "country" : "Indonesia"
+    } ,
+    
+    "invalidAddress" : {
+        "company" : " ",
+        "telephone" : " ",
+        "street_1" : " ",
+        "city" : " ",
+        "province" : " ",
+        "zip" : " ",
+        "country" : "Indonesia"
+    }
+
+}
