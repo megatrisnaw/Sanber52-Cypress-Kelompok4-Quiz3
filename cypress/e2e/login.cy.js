@@ -1,5 +1,5 @@
-import loginPage from '../support/pageObject/login.page';
-const userData = require('../fixtures/userData.json')
+
+//const userData = require('../fixtures/userData.json')
 
 describe('Login Functionality', () => {
     beforeEach(() => {
@@ -20,11 +20,6 @@ describe('Login Functionality', () => {
         cy.wait(500)
     });
     it('Verify failed login - email not registered', () => {
-        cy.login('megaaa@gmail.com','123456789');
-        cy.get('.message-error > div').should('be.visible');
-        cy.wait(500)
-    });
-    it.only('Verify failed login - fixtures', () => {
         cy.login('megaaa@gmail.com','123456789');
         cy.get('.message-error > div').should('be.visible');
         cy.wait(500)

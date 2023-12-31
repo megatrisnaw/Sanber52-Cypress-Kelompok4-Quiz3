@@ -1,0 +1,7 @@
+{
+    "first": "#firstname",
+    "last": "#lastname",
+    "paswd": "#password",
+    "paswdConfirm": "#password-confirmation",
+    "email": "#email_address"
+}

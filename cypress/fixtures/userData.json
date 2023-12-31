@@ -26,5 +26,12 @@
     "email": "user3@test.com",
     "password": "123456789",
     "password-confirmation": "123456789"
+  },
+  "invalidUser4": {
+    "firstName": "user4",
+    "lastName": "user4",
+    "email": "user4@test",
+    "password": "123456789",
+    "password-confirmation": "123456789"
   }
 }
