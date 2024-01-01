@@ -16,7 +16,33 @@
         cy.get('#email').type(email);
         cy.get('#pass').type(pass);
         cy.get('#send2').click();
+    })
+    Cypress.Commands.add('beliKaos',() => {
+        cy.get('#option-label-size-143-item-168').click();
+        cy.wait(500);
+        cy.get('#option-label-color-93-item-50').click();
+        cy.wait(300);
+        cy.get('#product-addtocart-button').click();
+        cy.wait(500)
+    })
+    Cypress.Commands.add('beliDuaKaos',() => {
+        cy.get('#option-label-size-143-item-168').click();
+        cy.wait(500);
+        cy.get('#option-label-color-93-item-50').click();
+        cy.wait(100);
+        cy.get('#qty').clear();
+        cy.get('#qty').type('2');
+        cy.get('#product-addtocart-button').click();
+        cy.wait(500)
     }) 
+    Cypress.Commands.add('beliJaket',() => {
+        cy.get('#option-label-size-143-item-166').click();
+        cy.wait(500);
+        cy.get('#option-label-color-93-item-52').click();
+        cy.wait(300);
+        cy.get('#product-addtocart-button').click();
+        cy.wait(500);
+    })
 //
 //
 // -- This is a child command --
