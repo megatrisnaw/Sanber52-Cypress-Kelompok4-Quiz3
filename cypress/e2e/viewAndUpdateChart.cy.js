@@ -55,7 +55,7 @@ describe("Product Test suite", () => {
     cy.get(tabReview).should("be.visible");
   });
 
-  it("Mmenambahkan produk ke keranjang", () => {
+  it("Menambahkan produk ke keranjang", () => {
     cy.get("#option-label-size-143-item-170").click();
     //cy.wait(1000);
     cy.get("#qty").clear();
