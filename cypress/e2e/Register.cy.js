@@ -32,4 +32,16 @@ describe('Register Functionality', () => {
         cy.get('#email_address-error')
             .should('contain', "Please enter a valid email address (Ex: johndoe@domain.com).")
     });
+
+    it.only('Verify failed register - Password Invalid', () => {
+        const randomEmail = `test${Math.floor(Math.random() * 100000)}`;
+        cy.get(regisData.first).type(userData.invalidUser5.firstName);
+        cy.get(regisData.last).type(userData.invalidUser5.lastName);
+        cy.get(regisData.email).type(userData.invalidUser5.email);
+        cy.get(regisData.paswd).type(userData.invalidUser5.password);
+        cy.get(regisData.paswdConfirm).type('differentpassword');
+        cy.get('#form-validate > .actions-toolbar > div.primary > .action > span').click();
+        cy.get('#password-error')
+            .should('contain', "Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.")
+    });
 });
