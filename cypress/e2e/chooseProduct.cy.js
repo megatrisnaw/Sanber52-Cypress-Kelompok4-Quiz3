@@ -3,7 +3,7 @@ describe('Choose Product Functionality', () => {
         return false
     })
     beforeEach(() => {
-      return cy.visit('https://magento.softwaretestingboard.com/')
+      return cy.visit('')
     })
 
     it('Choose a Product for Women', () => {
