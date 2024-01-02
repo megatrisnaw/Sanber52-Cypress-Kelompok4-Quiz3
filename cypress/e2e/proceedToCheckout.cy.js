@@ -11,6 +11,7 @@ describe('Proceed to Checkout Functionality', () => {
         cy.wait(1500);
         cy.clearAllSessionStorage
     });
+
     
 
     it('Proses Checkout Sukses 1 Barang', () => {
