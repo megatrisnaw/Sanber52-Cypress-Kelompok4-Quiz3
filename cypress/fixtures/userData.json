@@ -3,8 +3,9 @@
     "firstName": "sanber52",
     "lastName": "team4",
     "email": "megatrisnaww@gmail.com",
+    "currentPassword": "Asdf1234.",
     "password": "Asdf1234.",
-    "password-confirmation": "Asdf1234."
+    "passwordConfirmation": "Asdf1234."
     },
   "invalidUser1": {
       "firstName": "sanber52",
