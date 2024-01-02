@@ -33,7 +33,7 @@ describe('Register Functionality', () => {
             .should('contain', "Please enter a valid email address (Ex: johndoe@domain.com).")
     });
 
-    it.only('Verify failed register - Password Invalid', () => {
+    it('Verify failed register - Password Invalid', () => {
         const randomEmail = `test${Math.floor(Math.random() * 100000)}`;
         cy.get(regisData.first).type(userData.invalidUser5.firstName);
         cy.get(regisData.last).type(userData.invalidUser5.lastName);
